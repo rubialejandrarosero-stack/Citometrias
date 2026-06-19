@@ -1,0 +1,22 @@
+# Entorno conda del proyecto Citometrias (análisis de citometría de flujo en R)
+# Crear/actualizar:  conda env create -f environment.yml   (o: conda env update -f environment.yml --prune)
+# Activar:           conda activate citometrias
+name: citometrias
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  # --- R base y tooling para VS Code ---
+  - r-base>=4.5
+  - r-languageserver
+  - r-httpgd
+  - radian
+  - r-irkernel
+  # --- Manipulación y gráficos ---
+  - r-tidyverse
+  - r-data.table
+  # --- Citometría de flujo (Bioconductor vía bioconda) ---
+  - bioconductor-flowcore
+  - bioconductor-ggcyto
+  - bioconductor-flowworkspace
+  - bioconductor-opencyto

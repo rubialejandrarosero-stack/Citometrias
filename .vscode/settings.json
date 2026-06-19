@@ -1,0 +1,7 @@
+{
+  "r.rpath.linux": "/home/rubi/miniforge3/envs/citometrias/bin/R",
+  "r.rterm.linux": "/home/rubi/miniforge3/envs/citometrias/bin/radian",
+  "r.bracketedPaste": true,
+  "r.plot.useHttpgd": true,
+  "files.eol": "\n"
+}

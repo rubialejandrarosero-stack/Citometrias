@@ -1,0 +1,16 @@
+# Datos de citometría (pesados) — no versionar
+data/raw/*.fcs
+data/raw/*.FCS
+data/**/*.fcs
+
+# Salidas generadas
+output/figures/*
+!output/figures/.gitkeep
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Entorno conda local (si se crea dentro del repo)
+/envs/
