@@ -1,0 +1,24 @@
+sample,pct,n,environment,condition,donor,time
+INF ACT D1_24.fcs,53.5,46,Inflammatory,Activated,D1,24
+INF ACT D1_48.fcs,45.2,14,Inflammatory,Activated,D1,48
+INF ACT D1_96.fcs,36,39,Inflammatory,Activated,D1,96
+INF ACT D2_24.fcs,62,46,Inflammatory,Activated,D2,24
+INF ACT D2_48.fcs,45.5,9,Inflammatory,Activated,D2,48
+INF ACT D2_96.fcs,50,44,Inflammatory,Activated,D2,96
+INF NO ACT D1_24.fcs,45.7,21,Inflammatory,Resting,D1,24
+INF NO ACT D1_48.fcs,57.5,23,Inflammatory,Resting,D1,48
+INF NO ACT D1_96.fcs,45,24,Inflammatory,Resting,D1,96
+INF NO ACT D2_24.fcs,69.7,23,Inflammatory,Resting,D2,24
+INF NO ACT D2_48.fcs,45.5,15,Inflammatory,Resting,D2,48
+INF NO ACT D2_96.fcs,37,37,Inflammatory,Resting,D2,96
+NO INF ACT D1_24.fcs,57.5,23,Basal,Activated,D1,24
+NO INF ACT D1_96.fcs,57.4,70,Basal,Activated,D1,96
+NO INF ACT D2_24.fcs,65.5,30,Basal,Activated,D2,24
+NO INF ACT D2_48.fcs,57.1,20,Basal,Activated,D2,48
+NO INF ACT D2_96.fcs,66.2,96,Basal,Activated,D2,96
+NO INF NO ACT D1_24.fcs,74.4,32,Basal,Resting,D1,24
+NO INF NO ACT D1_48.fcs,38.8,20,Basal,Resting,D1,48
+NO INF NO ACT D1_96.fcs,66.7,28,Basal,Resting,D1,96
+NO INF NO ACT D2_24.fcs,55.8,27,Basal,Resting,D2,24
+NO INF NO ACT D2_48.fcs,23.5,14,Basal,Resting,D2,48
+NO INF NO ACT D2_96.fcs,62.5,18,Basal,Resting,D2,96

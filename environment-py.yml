@@ -1,0 +1,26 @@
+# Entorno conda de Python para el procesamiento de imágenes, composición de figuras
+# y análisis del secretoma/estadística.
+# Crear:   conda env create -f environment-py.yml
+# Activar: conda activate citometrias-py
+name: citometrias-py
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  # --- cálculo y datos ---
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  # --- gráficos ---
+  - matplotlib
+  # --- imágenes / figuras ---
+  - pillow
+  - tifffile
+  - adjusttext
+  # --- E/S de ofimática ---
+  - openpyxl
+  - python-docx
+  - python-pptx
+  # --- tooling ---
+  - ruff

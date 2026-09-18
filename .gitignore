@@ -1,16 +1,32 @@
-# Datos de citometría (pesados) — no versionar
-data/raw/*.fcs
-data/raw/*.FCS
-data/**/*.fcs
+# === Repositorio de Data Availability (Frontiers) ===
+# Alcance: solo código de análisis (R/python) + datos tidy que lo sustentan,
+# tal como declara el Data Availability Statement del manuscrito.
+# NO se versionan: datos crudos, figuras ya renderizadas, material de trabajo/scratch.
 
-# Salidas generadas
-output/figures/*
-!output/figures/.gitkeep
+# === Datos crudos (NO versionar) ===
+data/
 
-# R
+# === Salidas, excepto los datos tidy procesados ===
+output/*
+!output/tidy/
+output/tidy/*
+!output/tidy/*.csv
+
+# === Material de trabajo / temporales ===
+scratch/
+Rplots.pdf
+
+# === Documentos personales (no pertenecen al repo) ===
+Hoja_de_vida_*
+foto_perfil.png
+
+# === R / Python / entorno ===
 .Rhistory
 .RData
 .Rproj.user/
-
-# Entorno conda local (si se crea dentro del repo)
+__pycache__/
+*.pyc
 /envs/
+
+# NOTA: se versionan a propósito:
+#   R/  python/  environment*.yml  README.md  output/tidy/*.csv

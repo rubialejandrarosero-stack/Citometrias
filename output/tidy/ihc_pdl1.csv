@@ -1,0 +1,13 @@
+environment,condition,rep,value
+Basal,Control,1,0.5
+Basal,Control,2,0.2
+Basal,Resting,1,2.76
+Basal,Resting,2,2.78
+Basal,Activated,1,40.5
+Basal,Activated,2,38.9
+Inflammatory,Control,1,0.9
+Inflammatory,Control,2,0.87
+Inflammatory,Resting,1,8.27
+Inflammatory,Resting,2,9.0
+Inflammatory,Activated,1,13.0
+Inflammatory,Activated,2,11.5

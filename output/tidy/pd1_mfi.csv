@@ -1,0 +1,25 @@
+sample,mfi,environment,condition,donor,time
+INF ACT D1_24.fcs,557,Inflammatory,Activated,D1,24
+INF ACT D1_48.fcs,435,Inflammatory,Activated,D1,48
+INF ACT D1_96.fcs,569,Inflammatory,Activated,D1,96
+INF ACT D2_24.fcs,482,Inflammatory,Activated,D2,24
+INF ACT D2_48.fcs,366,Inflammatory,Activated,D2,48
+INF ACT D2_96.fcs,429,Inflammatory,Activated,D2,96
+INF NO ACT D1_24.fcs,586,Inflammatory,Resting,D1,24
+INF NO ACT D1_48.fcs,563,Inflammatory,Resting,D1,48
+INF NO ACT D1_96.fcs,116,Inflammatory,Resting,D1,96
+INF NO ACT D2_24.fcs,145,Inflammatory,Resting,D2,24
+INF NO ACT D2_48.fcs,522,Inflammatory,Resting,D2,48
+INF NO ACT D2_96.fcs,383,Inflammatory,Resting,D2,96
+NO INF ACT D1_24.fcs,563,Basal,Activated,D1,24
+NO INF ACT D1_48.fcs,422,Basal,Activated,D1,48
+NO INF ACT D1_96.fcs,586,Basal,Activated,D1,96
+NO INF ACT D2_24.fcs,406,Basal,Activated,D2,24
+NO INF ACT D2_48.fcs,493,Basal,Activated,D2,48
+NO INF ACT D2_96.fcs,563,Basal,Activated,D2,96
+NO INF NO ACT D1_24.fcs,151,Basal,Resting,D1,24
+NO INF NO ACT D1_48.fcs,249,Basal,Resting,D1,48
+NO INF NO ACT D1_96.fcs,284,Basal,Resting,D1,96
+NO INF NO ACT D2_24.fcs,302,Basal,Resting,D2,24
+NO INF NO ACT D2_48.fcs,203,Basal,Resting,D2,48
+NO INF NO ACT D2_96.fcs,215,Basal,Resting,D2,96
