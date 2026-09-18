@@ -66,7 +66,7 @@ fig_cyto_bar <- function(pop, title, file) {
     geom_point(data = d, aes(xpos, value), inherit.aes = FALSE,
                position = position_jitter(width = 0.06, height = 0), size = 1, colour = "black", alpha = 0.7) +
     geom_vline(xintercept = 4, linetype = "dashed", colour = "grey40", linewidth = 0.5) +
-    geom_text(data = time_df, aes(x, y, label = paste0(time, " h")), inherit.aes = FALSE, fontface = "bold", size = 5) +
+    geom_text(data = time_df, aes(x, y, label = time), inherit.aes = FALSE, fontface = "bold", size = 5) +
     annotate("text", x = 2, y = env_y, label = "Basal", fontface = "bold", size = 7) +
     annotate("text", x = 6, y = env_y, label = "Inflammatory", fontface = "bold", size = 7) +
     scale_colour_manual(values = cond2_pal) +

@@ -47,11 +47,11 @@ panel <- function(df_pts, df_sum, ylab, title, bar_width = 0.28, offsets = cond_
               colour = "black", linewidth = 1.0) +
     scale_colour_manual(values = cond_pal, labels = cond_lab, name = NULL) +
     scale_x_continuous(breaks = c(xbase("Basal", c(24, 48, 96)), xbase("Inflammatory", c(24, 48, 96))),
-                       labels = rep(c("24 h", "48 h", "96 h"), 2),
+                       labels = rep(c("24", "48", "96"), 2),
                        limits = c(tidx(24) - 0.6, xbase("Inflammatory", 96) + 0.6)) +
     { if (is.null(ymax)) scale_y_continuous(expand = expansion(mult = c(0, 0.08)))
       else scale_y_continuous(limits = c(0, ymax), expand = expansion(mult = c(0, 0.02))) } +
-    labs(x = NULL, y = ylab, title = title) +
+    labs(x = "Time (h)", y = ylab, title = title) +
     theme_classic(base_size = 15) +
     theme(axis.line = element_line(colour = "black", linewidth = 0.5),
           axis.ticks.x = element_blank(),
@@ -156,10 +156,10 @@ panel2 <- function(df_pts, df_sum, y_pts, y_m, y_sd, ylab, title, offsets = cond
               colour = "black", linewidth = 1.0) +
     scale_colour_manual(values = cond_pal, labels = cond_lab, name = NULL) +
     scale_x_continuous(breaks = c(xbase("Basal", c(24, 48, 96)), xbase("Inflammatory", c(24, 48, 96))),
-                       labels = rep(c("24 h", "48 h", "96 h"), 2),
+                       labels = rep(c("24", "48", "96"), 2),
                        limits = c(tidx(24) - 0.6, xbase("Inflammatory", 96) + 0.6)) +
     scale_y_continuous(expand = expansion(mult = c(0, 0.08))) +
-    labs(x = NULL, y = ylab, title = title) +
+    labs(x = "Time (h)", y = ylab, title = title) +
     theme_classic(base_size = 15) +
     theme(axis.line = element_line(colour = "black", linewidth = 0.5),
           axis.ticks.x = element_blank(),

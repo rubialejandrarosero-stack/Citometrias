@@ -52,17 +52,18 @@ panel <- function(cy) {
     geom_text(data = env_labs, aes(x, y, label = lab), inherit.aes = FALSE,
               size = 12, fontface = "italic", colour = "grey30", vjust = 1) +
     scale_colour_manual(values = cond_pal, labels = cond_lab, name = NULL) +
-    scale_x_continuous(breaks = c(1, 2, 3, 5, 6, 7), labels = rep(c("24 h", "48 h", "96 h"), 2),
+    scale_x_continuous(breaks = c(1, 2, 3, 5, 6, 7), labels = rep(c("24", "48", "96"), 2),
                        limits = c(0.0, 7.85)) +
     scale_y_continuous(labels = label_comma(), limits = c(0, ytop),
                        expand = expansion(mult = c(0, 0.02))) +
-    labs(x = NULL, y = "Concentration (pg/mL)", title = as.character(cy)) +
+    labs(x = "Time (h)", y = "Concentration (pg/mL)", title = as.character(cy)) +
     theme_classic(base_size = 40) +
     theme(axis.line = element_line(colour = "black", linewidth = 0.5),
           axis.ticks.x = element_blank(),
           axis.text = element_text(colour = "black", size = 40),
-          axis.text.x = element_text(size = 34, angle = 45, hjust = 1),
+          axis.text.x = element_text(size = 34, angle = 0, hjust = 0.5),
           axis.title.y = element_text(face = "bold", size = 40),
+          axis.title.x = element_text(face = "bold", size = 40),
           plot.title = element_text(face = "bold", hjust = 0.5, size = 40),
           legend.position = "top", legend.direction = "horizontal",
           legend.text = element_text(size = 40), legend.key.size = unit(1.8, "lines"),

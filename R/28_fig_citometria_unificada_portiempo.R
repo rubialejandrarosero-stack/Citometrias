@@ -20,7 +20,7 @@ cond_short <- c("Resting" = "PBMC resting", "Activated" = "PBMC activated")
 d <- read_csv("output/Infiltracion/infiltracion_conteos_porcentajes.csv", show_col_types = FALSE) %>%
   mutate(environment = ifelse(Condicion == "INF", "Inflammatory", "Basal"),
          cond = ifelse(Activacion == "ACT", "Activated", "Resting"),
-         timef = factor(paste0(Tiempo, " h"), levels = c("24 h", "48 h", "96 h"))) %>%
+         timef = factor(Tiempo, levels = c(24, 48, 96))) %>%
   pivot_longer(all_of(names(cols)), names_to = "pop", values_to = "value") %>%
   mutate(pop = factor(recode(pop, !!!cols), levels = pop_lv),
          base = cx[paste0(environment, ".", cond)], xpos = base + pop_off[as.character(pop)])

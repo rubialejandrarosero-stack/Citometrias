@@ -47,7 +47,7 @@ panel <- function(p, env) {
     geom_point(data = dd, aes(x, value), colour = col, size = 1.3, alpha = 0.85,
                position = position_jitter(width = 0.05, height = 0)) +
     scale_alpha_manual(values = c(Resting = 0, Activated = 1), guide = "none") +
-    scale_x_continuous(breaks = 1:3, labels = c("24 h", "48 h", "96 h")) +
+    scale_x_continuous(breaks = 1:3, labels = c("24", "48", "96")) +
     scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.04))) +
     labs(x = "Time (h)", y = paste0(p, "+ HLA-DR+ (%)"), title = env_lab[[as.character(env)]]) +
     theme_classic(base_size = 17) +

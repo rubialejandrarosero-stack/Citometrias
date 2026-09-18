@@ -39,7 +39,7 @@ plot_metric <- function(csv, valcol, title, ylab, pal, out, ytop) {
     scale_fill_manual(values = pal) +
     scale_x_continuous(breaks = c(1, 2, 3, 5, 6, 7), labels = rep(c("Control", "Resting", "Activated"), 2)) +
     scale_y_continuous(labels = label_comma(), expand = expansion(mult = c(0, 0.02)), limits = c(0, ytop)) +
-    facet_wrap(~ time, nrow = 1, labeller = labeller(.default = function(x) paste0(x, " h"))) +
+    facet_wrap(~ time, nrow = 1) +
     labs(title = title, x = NULL, y = ylab) + theme_ihc()
   ggsave(file.path(OUT, out), p, width = 12, height = 5, dpi = 300)
   ggsave(file.path(OUT, sub("png$", "pdf", out)), p, width = 12, height = 5)
